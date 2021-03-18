@@ -18,7 +18,7 @@
 .new-message-screen-title {
  text-align: center;
  margin-bottom: 1rem;
- color: rgb(0, 74, 185);
+ color: rgb(21, 88, 187);
 }
 
 .new-message-screen-delete {
@@ -44,7 +44,7 @@ label {
  font-size: 1.5rem;
 }
 
-.form-group input:focus {
+.form-group .input-group:focus {
  border-bottom: 3px solid rgba(52, 171, 250, 1);
 }
 
