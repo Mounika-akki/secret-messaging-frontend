@@ -18,7 +18,7 @@ const DeleteMessage = () => {
   }, [secretKey, password]);
 
   const handleDeleteMessage = () => {
-    fetch("http://localhost:5000/delete-message", {
+    fetch("https://secret-messaging-app.herokuapp.com/delete-message", {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

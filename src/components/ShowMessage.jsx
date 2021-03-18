@@ -14,10 +14,10 @@ const ShowMessage = () => {
     const url = new URL(urlString);
     setId(url.searchParams.get("rs"));
   }, []);
-
+  // https://secret-messaging-app.herokuapp.com/
   useEffect(() => {
     if (id?.length > 0) {
-      fetch(`http://localhost:5000/message-by-id/${id}`)
+      fetch(`https://secret-messaging-app.herokuapp.com/message-by-id/${id}`)
         .then((res) => res.json())
         .then((res) => {
           setMessage(res.result[0]?.message);
