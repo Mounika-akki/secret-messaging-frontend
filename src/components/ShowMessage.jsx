@@ -43,7 +43,7 @@ const ShowMessage = () => {
                 history.push("/");
               }}
             >
-              <i class="fa fa-fw fa-home"></i>Home
+              <i className="fa fa-fw fa-home"></i>Home
             </button>
 
             <div className="mt-3">
@@ -66,14 +66,14 @@ const ShowMessage = () => {
             <div className="text-center">
               <span className="new-message-screen-subtext">
                 Want to send a secret message to your friend ? &nbsp;
-                <a
+                <button
                   className="home-link"
                   onClick={() => {
                     history.push("/");
                   }}
                 >
                   Click here
-                </a>
+                </button>
               </span>
             </div>
           </form>

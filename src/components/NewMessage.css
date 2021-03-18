@@ -32,6 +32,8 @@
 
 .delete-link {
  color: red;
+ border: none;
+ background-color: rgba(253, 253, 253, 0.5);
 }
 
 .halfDiv {
@@ -43,7 +45,7 @@ label {
 }
 
 .form-group input:focus {
- border-bottom: 3px solid rgb(52, 171, 250);
+ border-bottom: 3px solid rgba(52, 171, 250, 1);
 }
 
 @media screen and (max-width:760px) {

@@ -46,7 +46,7 @@ const DeleteMessage = () => {
             history.push("/");
           }}
         >
-          <i class="fa fa-fw fa-home"></i>Home
+          <i className="fa fa-fw fa-home"></i>Home
         </button>
 
         <div className="form-group">

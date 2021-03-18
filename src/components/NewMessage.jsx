@@ -31,8 +31,10 @@ const NewMessage = () => {
     }
   }, [randomString, password, message, targetMail, rootUrl]);
 
+  // https://secret-messaging-app.herokuapp.com/
+
   const handleMessageSubmit = () => {
-    fetch("http://localhost:5000/create-message", {
+    fetch("https://secret-messaging-app.herokuapp.com/create-message", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -127,14 +129,14 @@ const NewMessage = () => {
       <div className="new-message-screen-delete p-2">
         <span className="new-message-screen-subtext">
           Want to delete a message? &nbsp;
-          <a
+          <button
             className="delete-link"
             onClick={() => {
               history.push("/delete");
             }}
           >
             Click here
-          </a>
+          </button>
         </span>
       </div>
     </div>
